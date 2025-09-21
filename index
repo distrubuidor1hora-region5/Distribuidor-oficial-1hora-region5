@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promoción Exclusiva - 1Hora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0056b3;
+      --secondary: #ff6600;
+      --bg-light: #f4f7fb;
+      --text-dark: #333;
+      --highlight: #ffe600;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      background: #fff;
+      max-width: 950px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      overflow: hidden;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .header {
+      background: linear-gradient(135deg, var(--primary), #003d80);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .header::after {
+      content: "OFERTA LIMITADA";
+      position: absolute;
+      top: 10px;
+      right: -40px;
+      background: var(--secondary);
+      color: #fff;
+      padding: 8px 60px;
+      transform: rotate(45deg);
+      font-weight: bold;
+      font-size: 0.8rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .header img {
+      width: 110px;
+      margin-bottom: 15px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .content {
+      padding: 30px 25px;
+      text-align: center;
+    }
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px auto;
+      display: block;
+      border: 5px solid var(--secondary);
+    }
+    h2, h3 {
+      color: var(--primary);
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      text-align: left;
+    }
+    ul li {
+      margin: 12px 0;
+      padding-left: 35px;
+      position: relative;
+      font-weight: 500;
+    }
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--secondary);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .cta {
+      display: inline-block;
+      background: var(--secondary);
+      color: #fff;
+      padding: 16px 35px;
+      margin-top: 25px;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+    .cta:hover {
+      background: #e05500;
+      transform: scale(1.05);
+    }
+    .footer {
+      background: #fafafa;
+      padding: 20px;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #555;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.95rem;
+    }
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    tfoot td {
+      font-weight: bold;
+      background: #eaeaea;
+    }
+    .highlight-text {
+      background: var(--highlight);
+      padding: 4px 8px;
+      border-radius: 5px;
+      font-weight: 700;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="logo.png" alt="Logo 1Hora">
+      <h1>¡Tu negocio ha sido seleccionado!</h1>
+    </div>
+    <div class="content">
+      <img src="tu_foto.jpg" alt="Foto de José Daniel Barrera" class="profile-pic">
+      <p>Hola, mi nombre es <strong>José Daniel Barrera</strong>. Soy el distribuidor oficial de esta zona de la red de puntos de venta con mayor crecimiento en México y he elegido personalmente tu negocio para que formes parte de nuestra red.</p>
+      <p>Queremos darte la bienvenida con un <span class="highlight-text">paquete especial</span> que te permitirá empezar a ganar desde el primer momento, <strong>sin riesgo y sin inversión inicial</strong>.</p>
+      
+      <h2>El paquete incluye:</h2>
+      <ul>
+        <li>Una <strong>vitrina de exhibición</strong> profesional para tus productos.</li>
+        <li>Una variedad de <strong>accesorios de alta demanda</strong> con gran margen de ganancia.</li>
+        <li><span class="highlight-text">Chips gratis</span> de inicio para recuperar tu inversión.</li>
+      </ul>
+
+      <h2>Promoción Exclusiva - Chips incluidos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Costo unitario (compra)</th>
+            <th>Costo total (compra)</th>
+            <th>Venta al público (unitario)</th>
+            <th>Venta total (venta)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Chips Telcel</td><td>20</td><td>$0.00</td><td>$0.00</td><td>$35.00</td><td>$700.00</td></tr>
+          <tr><td>Chips Unefon</td><td>4</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$280.00</td></tr>
+          <tr><td>Chips AT&T</td><td>4</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$280.00</td></tr>
+          <tr><td>Chips BAIT</td><td>4</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$280.00</td></tr>
+          <tr><td>Chips Movistar</td><td>3</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$210.00</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="5">Total venta potencial</td><td>$1,750.00</td></tr>
+        </tfoot>
+      </table>
+
+      <p><strong>Recupera tus $1,750.00</strong> solo con la venta de los chips incluidos.</p>
+
+      <h2>Detalle completo del paquete</h2>
+      <p><strong>Inversión total: $1,006.00 + $200 de depósito por la vitrina</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Costo unitario (compra)</th>
+            <th>Costo total (compra)</th>
+            <th>Venta al público (unitario)</th>
+            <th>Venta total (venta)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Cargador combo V8</td><td>3</td><td>$49.00</td><td>$147.00</td><td>$100.00</td><td>$300.00</td></tr>
+          <tr><td>Cargador combo tipo C</td><td>3</td><td>$49.00</td><td>$147.00</td><td>$100.00</td><td>$300.00</td></tr>
+          <tr><td>Cargador combo iPhone</td><td>3</td><td>$49.00</td><td>$147.00</td><td>$100.00</td><td>$300.00</td></tr>
+          <tr><td>Cable V8</td><td>3</td><td>$24.80</td><td>$74.40</td><td>$60.00</td><td>$180.00</td></tr>
+          <tr><td>Cable tipo C</td><td>3</td><td>$24.80</td><td>$74.40</td><td>$60.00</td><td>$180.00</td></tr>
+          <tr><td>Cable iPhone</td><td>3</td><td>$24.80</td><td>$74.40</td><td>$60.00</td><td>$180.00</td></tr>
+          <tr><td>Audífono económico</td><td>4</td><td>$36.90</td><td>$147.60</td><td>$75.00</td><td>$300.00</td></tr>
+          <tr><td>Soporte imán</td><td>1</td><td>$22.00</td><td>$22.00</td><td>$50.00</td><td>$50.00</td></tr>
+          <tr><td>Cubo carga USB</td><td>3</td><td>$28.60</td><td>$85.80</td><td>$60.00</td><td>$180.00</td></tr>
+          <tr><td>Plug auto</td><td>3</td><td>$28.80</td><td>$86.40</td><td>$60.00</td><td>$180.00</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="3">TOTALES</td><td>$1,006.00</td><td></td><td>$2,150.00</td></tr>
+          <tr>
+            <td colspan="5" style="text-align: right;">Totales de chips promocionales</td>
+            <td>$1,750.00</td>
+          </tr>
+          <tr>
+            <td colspan="5" style="font-weight: bold; font-size: 1.2rem; text-align: right;">Retorno total de venta</td>
+            <td style="font-weight: bold; font-size: 1.2rem;">$3,900.00</td>
+          </tr>
+        </tfoot>
+      </table>
+      
+      <p>¿Listo para <span class="highlight-text">empezar a ganar</span> desde hoy?</p>
+      <a href="https://wa.me/521XXXXXXXXXX" class="cta">📲 Contactar ahora</a>
+    </div>
+    <div class="footer">
+      © 2025 1Hora. Todos los derechos reservados.
+    </div>
+  </div>
+</body>
+</html>
