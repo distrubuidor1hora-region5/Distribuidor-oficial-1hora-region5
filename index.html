@@ -26,7 +26,7 @@
     }
     .container {
       background: #fff;
-      max-width: 950px;
+      max-width: 960px;
       width: 100%;
       border-radius: 20px;
       box-shadow: 0 8px 30px rgba(0,0,0,0.12);
@@ -40,131 +40,71 @@
     .header {
       background: linear-gradient(135deg, var(--primary), #003d80);
       color: #fff;
-      padding: 40px 20px;
+      padding: 50px 20px 40px;
       text-align: center;
       position: relative;
     }
     .header::after {
       content: "OFERTA LIMITADA";
       position: absolute;
-      top: 10px;
+      top: 15px;
       right: -40px;
       background: var(--secondary);
       color: #fff;
       padding: 8px 60px;
       transform: rotate(45deg);
       font-weight: bold;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     .header img {
       width: 110px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
     .header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 700;
     }
     .content {
-      padding: 30px 25px;
+      padding: 40px 35px;
       text-align: center;
-    }
-    .profile-pic {
-      width: 150px; /* Aumentado */
-      height: 150px; /* Aumentado */
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid var(--secondary);
     }
     .logo-profile-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 60px; /* Aumentado para más espacio */
-      margin: 20px auto;
+      gap: 80px;
+      margin: 30px auto;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid var(--secondary);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     }
     .logo-profile-container .side-logo {
-      width: 60px;
+      width: 65px;
       height: auto;
+      opacity: 0.9;
     }
     h2, h3 {
       color: var(--primary);
-      margin-top: 25px;
+      margin-top: 30px;
       margin-bottom: 15px;
+      font-size: 1.5rem;
     }
     p {
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 20px 0;
-      text-align: left;
-    }
-    ul li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--secondary);
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-    .cta {
-      display: inline-block;
-      background: var(--secondary);
-      color: #fff;
-      padding: 16px 35px;
-      margin-top: 25px;
-      border-radius: 10px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 1.1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      transition: transform 0.2s ease, background 0.3s ease;
-    }
-    .cta:hover {
-      background: #e05500;
-      transform: scale(1.05);
-    }
-    .footer {
-      background: #fafafa;
-      padding: 20px;
-      font-size: 0.9rem;
-      text-align: center;
-      color: #555;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      background: #fff;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: center;
-    }
-    th {
-      background: var(--primary);
-      color: #fff;
-      font-size: 0.95rem;
-    }
-    tr:nth-child(even) {
-      background: #f9f9f9;
-    }
-    tfoot td {
-      font-weight: bold;
-      background: #eaeaea;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-size: 1rem;
     }
     .highlight-text {
       background: var(--highlight);
-      padding: 4px 8px;
+      padding: 4px 10px;
       border-radius: 5px;
       font-weight: 700;
       color: #000;
@@ -174,13 +114,69 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      margin: 20px 0;
-      gap: 90px; /* Aumentado para más espacio entre logos */
+      margin: 25px 0;
+      gap: 80px;
     }
     .logos-container img {
-      max-width: 100px;
+      max-width: 95px;
       height: auto;
+      filter: grayscale(20%);
       transition: filter 0.3s ease;
+    }
+    .logos-container img:hover {
+      filter: none;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-radius: 10px;
+      overflow: hidden;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: var(--primary);
+      color: #fff;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    tfoot td {
+      font-weight: bold;
+      background: #eaeaea;
+    }
+    .cta {
+      display: inline-block;
+      background: var(--secondary);
+      color: #fff;
+      padding: 18px 40px;
+      margin-top: 30px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.2rem;
+      box-shadow: 0 5px 14px rgba(0,0,0,0.15);
+      transition: transform 0.25s ease, background 0.3s ease;
+    }
+    .cta:hover {
+      background: #e05500;
+      transform: scale(1.07);
+    }
+    .footer {
+      background: #fafafa;
+      padding: 20px;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #555;
     }
   </style>
 </head>
@@ -197,23 +193,16 @@
         <img src="logo.png" alt="Logo 1Hora" class="side-logo">
       </div>
       <p>Hola, mi nombre es <strong>José Daniel Barrera</strong>. Soy el distribuidor oficial de esta zona de la red de puntos de venta con mayor crecimiento en México y he elegido personalmente tu negocio para que formes parte de nuestra red.</p>
-      
       <p>Queremos darte la bienvenida con un <span class="highlight-text">paquete especial</span> que te permitirá empezar a ganar desde el primer momento, <strong>sin riesgo y sin inversión inicial</strong>.</p>
-      
-      <!-- Sección de logos de operadores principales -->
+      <p>Este paquete especial incluye todo lo que necesitas para empezar: una vitrina exhibidora, un surtido completo de accesorios y los chips de las compañías más comerciales del mercado.</p>
+
       <div class="logos-container">
         <img src="logo_telcel.png" alt="Logo Telcel">
         <img src="logo_att.png" alt="Logo AT&T">
         <img src="logo_movistar.png" alt="Logo Movistar">
+        <img src="logo_unefon.png" alt="Logo Unefon">
+        <img src="logo_bait.png" alt="Logo BAIT">
       </div>
-      <!-- Fin de la sección de logos -->
-
-      <h2>El paquete incluye:</h2>
-      <ul>
-        <li>Una <strong>vitrina de exhibición</strong> profesional para tus productos.</li>
-        <li>Una variedad de <strong>accesorios de alta demanda</strong> con gran margen de ganancia.</li>
-        <li><span class="highlight-text">Chips gratis</span> de inicio para recuperar tu inversión.</li>
-      </ul>
 
       <h2>Promoción Exclusiva - Chips incluidos</h2>
       <table>
@@ -240,13 +229,6 @@
       </table>
 
       <p><strong>Recupera tus $1,750.00</strong> solo con la venta de los chips incluidos.</p>
-
-      <!-- Sección de logos adicionales -->
-      <div class="logos-container">
-        <img src="logo_unefon.png" alt="Logo Unefon">
-        <img src="logo_bait.png" alt="Logo BAIT">
-      </div>
-      <!-- Fin de la sección de logos -->
 
       <h2>Detalle completo del paquete</h2>
       <p><strong>Inversión total: $1,006.00 + $200 de depósito por la vitrina</strong></p>
@@ -285,7 +267,7 @@
           </tr>
         </tfoot>
       </table>
-      
+
       <p>¿Listo para <span class="highlight-text">empezar a ganar</span> desde hoy?</p>
       <a href="https://wa.me/521XXXXXXXXXX" class="cta">📲 Contactar ahora</a>
     </div>
