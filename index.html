@@ -71,13 +71,22 @@
       text-align: center;
     }
     .profile-pic {
-      width: 130px;
-      height: 130px;
+      width: 150px; /* Aumentado */
+      height: 150px; /* Aumentado */
       border-radius: 50%;
       object-fit: cover;
-      margin: 20px auto;
-      display: block;
       border: 5px solid var(--secondary);
+    }
+    .logo-profile-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px; /* Aumentado para más espacio */
+      margin: 20px auto;
+    }
+    .logo-profile-container .side-logo {
+      width: 60px;
+      height: auto;
     }
     h2, h3 {
       color: var(--primary);
@@ -93,12 +102,6 @@
       padding: 0;
       margin: 20px 0;
       text-align: left;
-    }
-    ul li {
-      margin: 12px 0;
-      padding-left: 35px;
-      position: relative;
-      font-weight: 500;
     }
     ul li::before {
       content: "✔";
@@ -172,16 +175,12 @@
       align-items: center;
       flex-wrap: wrap;
       margin: 20px 0;
-      gap: 20px;
+      gap: 80px; /* Aumentado para más espacio entre logos */
     }
     .logos-container img {
       max-width: 100px;
       height: auto;
-      filter: grayscale(80%);
       transition: filter 0.3s ease;
-    }
-    .logos-container img:hover {
-      filter: grayscale(0%);
     }
   </style>
 </head>
@@ -192,7 +191,11 @@
       <h1>¡Tu negocio ha sido seleccionado!</h1>
     </div>
     <div class="content">
-      <img src="tu_foto.jpg" alt="Foto de José Daniel Barrera" class="profile-pic">
+      <div class="logo-profile-container">
+        <img src="logo.png" alt="Logo 1Hora" class="side-logo">
+        <img src="tu_foto.jpg" alt="Foto de José Daniel Barrera" class="profile-pic">
+        <img src="logo.png" alt="Logo 1Hora" class="side-logo">
+      </div>
       <p>Hola, mi nombre es <strong>José Daniel Barrera</strong>. Soy el distribuidor oficial de esta zona de la red de puntos de venta con mayor crecimiento en México y he elegido personalmente tu negocio para que formes parte de nuestra red.</p>
       
       <p>Queremos darte la bienvenida con un <span class="highlight-text">paquete especial</span> que te permitirá empezar a ganar desde el primer momento, <strong>sin riesgo y sin inversión inicial</strong>.</p>
@@ -292,4 +295,3 @@
   </div>
 </body>
 </html>
-
