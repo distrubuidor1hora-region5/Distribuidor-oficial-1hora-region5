@@ -166,19 +166,45 @@
       font-weight: 700;
       color: #000;
     }
+    .logos-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+      gap: 20px;
+    }
+    .logos-container img {
+      max-width: 100px;
+      height: auto;
+      filter: grayscale(80%);
+      transition: filter 0.3s ease;
+    }
+    .logos-container img:hover {
+      filter: grayscale(0%);
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <img src="logo.png.png" alt="Logo 1Hora">
+      <img src="logo.png" alt="Logo 1Hora">
       <h1>¡Tu negocio ha sido seleccionado!</h1>
     </div>
     <div class="content">
       <img src="tu_foto.jpg" alt="Foto de José Daniel Barrera" class="profile-pic">
       <p>Hola, mi nombre es <strong>José Daniel Barrera</strong>. Soy el distribuidor oficial de esta zona de la red de puntos de venta con mayor crecimiento en México y he elegido personalmente tu negocio para que formes parte de nuestra red.</p>
+      
       <p>Queremos darte la bienvenida con un <span class="highlight-text">paquete especial</span> que te permitirá empezar a ganar desde el primer momento, <strong>sin riesgo y sin inversión inicial</strong>.</p>
       
+      <!-- Sección de logos de operadores principales -->
+      <div class="logos-container">
+        <img src="logo_telcel.png" alt="Logo Telcel">
+        <img src="logo_att.png" alt="Logo AT&T">
+        <img src="logo_movistar.png" alt="Logo Movistar">
+      </div>
+      <!-- Fin de la sección de logos -->
+
       <h2>El paquete incluye:</h2>
       <ul>
         <li>Una <strong>vitrina de exhibición</strong> profesional para tus productos.</li>
@@ -211,6 +237,13 @@
       </table>
 
       <p><strong>Recupera tus $1,750.00</strong> solo con la venta de los chips incluidos.</p>
+
+      <!-- Sección de logos adicionales -->
+      <div class="logos-container">
+        <img src="logo_unefon.png" alt="Logo Unefon">
+        <img src="logo_bait.png" alt="Logo BAIT">
+      </div>
+      <!-- Fin de la sección de logos -->
 
       <h2>Detalle completo del paquete</h2>
       <p><strong>Inversión total: $1,006.00 + $200 de depósito por la vitrina</strong></p>
@@ -259,3 +292,4 @@
   </div>
 </body>
 </html>
+
