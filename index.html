@@ -48,7 +48,7 @@
       content: "OFERTA LIMITADA";
       position: absolute;
       top: 15px;
-      right: -40px;
+      right: -25px; /* Ajuste para que se vea completa */
       background: var(--secondary);
       color: #fff;
       padding: 8px 60px;
@@ -63,9 +63,15 @@
       margin-bottom: 20px;
     }
     .header h1 {
-      margin: 0;
+      margin: 0 0 10px;
       font-size: 2.2rem;
       font-weight: 700;
+    }
+    .header .subtitle-emocional {
+      font-size: 1.1rem;
+      font-weight: 400;
+      max-width: 600px;
+      margin: 0 auto;
     }
     .content {
       padding: 40px 35px;
@@ -79,8 +85,8 @@
       margin: 30px auto;
     }
     .profile-pic {
-      width: 150px;
-      height: 150px;
+      width: 120px; /* Tamaño ajustado para ser ligeramente más chica */
+      height: 120px; /* Tamaño ajustado para ser ligeramente más chica */
       border-radius: 50%;
       object-fit: cover;
       border: 6px solid var(--secondary);
@@ -109,6 +115,20 @@
       font-weight: 700;
       color: #000;
     }
+    .problem-solution {
+        margin: 40px 0;
+        padding: 30px;
+        background: var(--bg-light);
+        border-radius: 10px;
+        border-left: 5px solid var(--primary);
+        text-align: left;
+    }
+    .problem-solution p {
+        margin: 0 0 15px;
+    }
+    .problem-solution strong {
+        color: var(--primary);
+    }
     .logos-container {
       display: flex;
       justify-content: center;
@@ -126,7 +146,12 @@
     .logos-container img:hover {
       filter: none;
     }
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
     table {
+      min-width: 600px; /* Ancho mínimo para que la tabla se desplace */
       width: 100%;
       border-collapse: collapse;
       margin: 25px 0;
@@ -154,6 +179,12 @@
       font-weight: bold;
       background: #eaeaea;
     }
+    .urgencia {
+        font-weight: bold;
+        color: #d9534f;
+        margin: 30px 0 15px;
+        font-size: 1.1rem;
+    }
     .cta {
       display: inline-block;
       background: var(--secondary);
@@ -178,13 +209,23 @@
       text-align: center;
       color: #555;
     }
+    .beneficios-list {
+        text-align: left;
+        list-style-type: '✔ ';
+        padding-left: 20px;
+    }
+    .beneficios-list li {
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
       <img src="logo.png" alt="Logo 1Hora">
-      <h1>¡Tu negocio ha sido seleccionado!</h1>
+      <h1>¡Felicidades, tu negocio ha sido seleccionado para ser Punto de Venta Oficial 1 Hora!</h1>
+      <p class="subtitle-emocional">Convierte tu tienda en un centro de ventas con mayores ganancias y clientes satisfechos.</p>
     </div>
     <div class="content">
       <div class="logo-profile-container">
@@ -192,8 +233,13 @@
         <img src="tu_foto.jpg" alt="Foto de José Daniel Barrera" class="profile-pic">
         <img src="logo.png" alt="Logo 1Hora" class="side-logo">
       </div>
-      <p>Hola, mi nombre es <strong>José Daniel Barrera</strong>. Soy el distribuidor oficial de esta zona de la red de puntos de venta con mayor crecimiento en México y he elegido personalmente tu negocio para que formes parte de nuestra red.</p>
-      <p>Queremos darte la bienvenida con un <span class="highlight-text">paquete especial</span> que te permitirá empezar a ganar desde el primer momento, <strong>sin riesgo y sin inversión inicial</strong>.</p>
+      <p>¡Hola! Nuestro distribuidor asignado de la región 5, **José Daniel Barrera Torres**, ha seleccionado personalmente tu negocio como un punto estratégico para unirte a nuestra red oficial. Queremos darte la bienvenida y ayudarte a aumentar tus clientes y ventas desde el primer día.</p>
+      
+      <div class="problem-solution">
+        <p><strong>Problema:</strong> Muchos negocios no pueden incrementar sus ganancias sin grandes inversiones.</p>
+        <p><strong>Solución:</strong> Con nuestro paquete, arrancas con vitrina, accesorios y chips de todas las marcas.</p>
+      </div>
+
       <p>Este paquete especial incluye todo lo que necesitas para empezar: una vitrina exhibidora, un surtido completo de accesorios y los chips de las compañías más comerciales del mercado.</p>
 
       <div class="logos-container">
@@ -203,71 +249,88 @@
         <img src="logo_unefon.png" alt="Logo Unefon">
         <img src="logo_bait.png" alt="Logo BAIT">
       </div>
+      
+      <p>
+        Con una inversión total de solo **$1,200** ($1,000 en accesorios y un depósito de $200 por la vitrina), la venta de los chips promocionales te permite recuperar incluso más que la inversión inicial.
+      </p>
 
       <h2>Promoción Exclusiva - Chips incluidos</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Producto</th>
-            <th>Cantidad</th>
-            <th>Costo unitario (compra)</th>
-            <th>Costo total (compra)</th>
-            <th>Venta al público (unitario)</th>
-            <th>Venta total (venta)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Chips Telcel</td><td>20</td><td>$0.00</td><td>$0.00</td><td>$35.00</td><td>$700.00</td></tr>
-          <tr><td>Chips Unefon</td><td>4</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$280.00</td></tr>
-          <tr><td>Chips AT&T</td><td>4</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$280.00</td></tr>
-          <tr><td>Chips BAIT</td><td>4</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$280.00</td></tr>
-          <tr><td>Chips Movistar</td><td>3</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$210.00</td></tr>
-        </tbody>
-        <tfoot>
-          <tr><td colspan="5">Total venta potencial</td><td>$1,750.00</td></tr>
-        </tfoot>
-      </table>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Costo unitario (compra)</th>
+              <th>Costo total (compra)</th>
+              <th>Venta al público (unitario)</th>
+              <th>Venta total (venta)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Chips Telcel</td><td>20</td><td>$0.00</td><td>$0.00</td><td>$35.00</td><td>$700.00</td></tr>
+            <tr><td>Chips Unefon</td><td>4</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$280.00</td></tr>
+            <tr><td>Chips AT&T</td><td>4</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$280.00</td></tr>
+            <tr><td>Chips BAIT</td><td>4</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$280.00</td></tr>
+            <tr><td>Chips Movistar</td><td>3</td><td>$0.00</td><td>$0.00</td><td>$70.00</td><td>$210.00</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="5">Total venta potencial</td><td>$1,750.00</td></tr>
+          </tfoot>
+        </table>
+      </div>
 
-      <p><strong>Recupera tus $1,750.00</strong> solo con la venta de los chips incluidos.</p>
+      <p><strong>Recupera $1,750.00</strong> solo con la **primera venta** de los chips incluidos.</p>
 
       <h2>Detalle completo del paquete</h2>
       <p><strong>Inversión total: $1,006.00 + $200 de depósito por la vitrina</strong></p>
-      <table>
-        <thead>
-          <tr>
-            <th>Producto</th>
-            <th>Cantidad</th>
-            <th>Costo unitario (compra)</th>
-            <th>Costo total (compra)</th>
-            <th>Venta al público (unitario)</th>
-            <th>Venta total (venta)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Cargador combo V8</td><td>3</td><td>$49.00</td><td>$147.00</td><td>$100.00</td><td>$300.00</td></tr>
-          <tr><td>Cargador combo tipo C</td><td>3</td><td>$49.00</td><td>$147.00</td><td>$100.00</td><td>$300.00</td></tr>
-          <tr><td>Cargador combo iPhone</td><td>3</td><td>$49.00</td><td>$147.00</td><td>$100.00</td><td>$300.00</td></tr>
-          <tr><td>Cable V8</td><td>3</td><td>$24.80</td><td>$74.40</td><td>$60.00</td><td>$180.00</td></tr>
-          <tr><td>Cable tipo C</td><td>3</td><td>$24.80</td><td>$74.40</td><td>$60.00</td><td>$180.00</td></tr>
-          <tr><td>Cable iPhone</td><td>3</td><td>$24.80</td><td>$74.40</td><td>$60.00</td><td>$180.00</td></tr>
-          <tr><td>Audífono económico</td><td>4</td><td>$36.90</td><td>$147.60</td><td>$75.00</td><td>$300.00</td></tr>
-          <tr><td>Soporte imán</td><td>1</td><td>$22.00</td><td>$22.00</td><td>$50.00</td><td>$50.00</td></tr>
-          <tr><td>Cubo carga USB</td><td>3</td><td>$28.60</td><td>$85.80</td><td>$60.00</td><td>$180.00</td></tr>
-          <tr><td>Plug auto</td><td>3</td><td>$28.80</td><td>$86.40</td><td>$60.00</td><td>$180.00</td></tr>
-        </tbody>
-        <tfoot>
-          <tr><td colspan="3">TOTALES</td><td>$1,006.00</td><td></td><td>$2,150.00</td></tr>
-          <tr>
-            <td colspan="5" style="text-align: right;">Totales de chips promocionales</td>
-            <td>$1,750.00</td>
-          </tr>
-          <tr>
-            <td colspan="5" style="font-weight: bold; font-size: 1.2rem; text-align: right;">Retorno total de venta</td>
-            <td style="font-weight: bold; font-size: 1.2rem;">$3,900.00</td>
-          </tr>
-        </tfoot>
-      </table>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Costo unitario (compra)</th>
+              <th>Costo total (compra)</th>
+              <th>Venta al público (unitario)</th>
+              <th>Venta total (venta)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Cargador combo V8</td><td>3</td><td>$49.00</td><td>$147.00</td><td>$100.00</td><td>$300.00</td></tr>
+            <tr><td>Cargador combo tipo C</td><td>3</td><td>$49.00</td><td>$147.00</td><td>$100.00</td><td>$300.00</td></tr>
+            <tr><td>Cargador combo iPhone</td><td>3</td><td>$49.00</td><td>$147.00</td><td>$100.00</td><td>$300.00</td></tr>
+            <tr><td>Cable V8</td><td>3</td><td>$24.80</td><td>$74.40</td><td>$60.00</td><td>$180.00</td></tr>
+            <tr><td>Cable tipo C</td><td>3</td><td>$24.80</td><td>$74.40</td><td>$60.00</td><td>$180.00</td></tr>
+            <tr><td>Cable iPhone</td><td>3</td><td>$24.80</td><td>$74.40</td><td>$60.00</td><td>$180.00</td></tr>
+            <tr><td>Audífono económico</td><td>4</td><td>$36.90</td><td>$147.60</td><td>$75.00</td><td>$300.00</td></tr>
+            <tr><td>Soporte imán</td><td>1</td><td>$22.00</td><td>$22.00</td><td>$50.00</td><td>$50.00</td></tr>
+            <tr><td>Cubo carga USB</td><td>3</td><td>$28.60</td><td>$85.80</td><td>$60.00</td><td>$180.00</td></tr>
+            <tr><td>Plug auto</td><td>3</td><td>$28.80</td><td>$86.40</td><td>$60.00</td><td>$180.00</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="3">TOTALES</td><td>$1,006.00</td><td></td><td>$2,150.00</td></tr>
+            <tr>
+              <td colspan="5" style="text-align: right;">Totales de chips promocionales</td>
+              <td>$1,750.00</td>
+            </tr>
+            <tr>
+              <td colspan="5" style="font-weight: bold; font-size: 1.2rem; text-align: right;">Retorno total de venta</td>
+              <td style="font-weight: bold; font-size: 1.2rem;">$3,900.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
 
+      <h2>Beneficios Exclusivos</h2>
+      <ul class="beneficios-list">
+          <li>Retorno de inversión del paquete del 390%.</li>
+          <li>Respaldo directo de un distribuidor oficial.</li>
+          <li>Chips de todas las compañías.</li>
+          <li>Catálogo virtual y soporte continuo.</li>
+      </ul>
+
+      <p class="urgencia">Oferta válida solo para los próximos 10 negocios seleccionados. ¡Quedan pocas vitrinas!</p>
       <p>¿Listo para <span class="highlight-text">empezar a ganar</span> desde hoy?</p>
       <a href="https://wa.me/521XXXXXXXXXX" class="cta">📲 Contactar ahora</a>
     </div>
